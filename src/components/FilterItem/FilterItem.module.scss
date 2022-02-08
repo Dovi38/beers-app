@@ -1,0 +1,21 @@
+.textLabel {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-top: 20px;
+  font-family: 'Signika Negative', sans-serif;
+}
+
+label {
+  border: 4px dashed rgba(138, 83, 11, 0.89);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+[type=checkbox] {
+  float: right;
+  width: 20px;
+  height: 20px;
+  margin: 5px 0;
+  margin-bottom: 10px;
+}
