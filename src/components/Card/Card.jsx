@@ -3,7 +3,7 @@ import styles from './Card.module.scss';
 
 
 const Card = (props) => {
-  const {image_url, name, abv, ph, description} = props;
+  const {image_url, name, abv, ph, description} = props.beer;
  
   return (
     <div className={styles.card}>

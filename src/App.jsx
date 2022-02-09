@@ -16,6 +16,7 @@ const App = () => {
     const apiBeers = await getBeers();
     return setBeers(apiBeers);
   }
+  
   useEffect(() => {
     updateApiBeers(); 
   }, []);
