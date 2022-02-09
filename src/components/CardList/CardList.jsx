@@ -6,37 +6,25 @@ const CardList = (props) => {
   const {input, beers, checked, checkedOne, checkedTwo} = props;
   
   const abvBeer = () => {
-    let highAbv = [];
-    beers.map((beer) => {
-     let abv = beer.abv;
-      if(abv > 6) {
-        highAbv.push(beer);  
-    } 
-    return highAbv;
+    const highAbv = beers.filter((beer) => {
+      let abv = beer.abv;
+      return abv > 6;
     })
     return highAbv.map((beer, id) => <Card key={id} beer={beer} />) 
   }
 
   const phBeer = () => {
-    let lowPh = [];
-    beers.map((beer) => {
-     let ph = beer.ph;
-      if(ph < 4) {
-        lowPh.push(beer);  
-    } 
-    return lowPh;
+    const lowPh = beers.filter((beer) => {
+      let ph = beer.ph;
+      return ph < 4;
     })
     return lowPh.map((beer, id) => <Card key={id} beer={beer} />) 
   }
   
   const classicBeer = () => {
-    let classic = [];
-    beers.map((beer) => {
-     let ibu = beer.ibu;
-      if(ibu > 50) {
-        classic.push(beer);  
-    } 
-    return classic;
+    const classic = beers.filter((beer) => {
+      let ibu = beer.ibu;
+      return ibu > 50;
     })
     return classic.map((beer, id) => <Card key={id} beer={beer} />) 
   }

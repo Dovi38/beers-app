@@ -6,6 +6,7 @@
 
   .nav {
     width: 15%;
+
   }
 
   .wrapper {
@@ -14,6 +15,7 @@
     border-bottom: 7px solid rgb(223, 165, 6);
     overflow-y: scroll;
     overflow-x: hidden;
+    flex: 1 1 auto;
   }
 
   ::-webkit-scrollbar {
@@ -34,4 +36,10 @@
     background: rgb(189, 143, 7);
   }
 
+}
+
+@media screen and (max-width: 600px) {
+  .nav {
+    flex: 1 1 40%;
+  }
 }
