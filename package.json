@@ -2,7 +2,7 @@
   "name": "beers-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/Dovi38/beers-app",
+  "homepage": "https://Dovi38.github.io/beers-app",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
