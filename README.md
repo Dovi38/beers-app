@@ -1,2 +1,3 @@
-- This project was built to extract data from the Punk API.
-- The data from API was used inside components.
+- The project was built using React.
+- The purpose of this project is to fetch data from PUNK API using React hooks.
+- Fetched data from API is passed to components as props.
